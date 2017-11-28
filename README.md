@@ -1,6 +1,7 @@
-# We have 6 major python scripts (SVM_mode, googleIndustryCrawler.py, getData.py, Extra.py. clustering.py, and plotClusters.py) that we use for our project (we have preprocessed the data already). 
+# Time Series Forecasting using Machine Learning
 
-## i) SVM_model.py  (Run this file , it contains the SMV model and plots the error rates)
+## i) SVM_model.py  
+(Run this file, it contains the SMV model and plots the error rates)
 
 1) Define the 24 technical indicators for our input X and a output Y for 1,5, and 10 day projections. 
 
@@ -23,10 +24,7 @@ In this file we import the quotes using the Yahoo! Python module for AMEX, NYSE,
 In this file we remove any stocks from our dictionaries and quotes lists that are funds. We do so by simply iterating through their industry data. We also run Ridge, Elastic Net, and Lasso regressions to determine the most important of the 12 features (the result was always 7).
 
 ## v) clustering.py
-In this file, for each stock market we cluster over the 7 features described in the Extra.py file, using a sparse inverse covariance matrix and affinity propagation. We then sum up the number of times any two stocks were in the same cluster over each iteration n defined as the weightî matrix. We then cluster over this matrix one last time to achieve the final cluster results. 
+In this file, for each stock market we cluster over the 7 features described in the Extra.py file, using a sparse inverse covariance matrix and affinity propagation. We then sum up the number of times any two stocks were in the same cluster over each iteration n defined as the weight‚Äù matrix. We then cluster over this matrix one last time to achieve the final cluster results. 
 
 ## vi) plotClusters.py 
 Building on code written by Varoquaux (see works cited in the report), we plot each of the 3 stock markets. These images can be seen either in the lecture slides or the report. 
-
-
-  
